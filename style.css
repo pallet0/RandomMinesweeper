@@ -1,0 +1,50 @@
+/* Import Google Font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    /* Tailwind's flex utilities (flex, items-center, justify-center, min-h-screen)
+       are used directly in index.html to center the content. */
+    font-family: 'Inter', sans-serif;
+}
+
+.game {
+    /* The .game container is now centered using Tailwind classes on the body. */
+    /* flex-direction: column and margin: auto are handled by Tailwind's flex utilities. */
+    /* Tailwind classes apply styling directly to the element in index.html */
+}
+
+.logo,
+.diff,
+.btncontainer,
+.minefield {
+    /* These styles are no longer needed here as Tailwind classes are applied directly in HTML. */
+    /* width: auto; */
+    /* display: inline-block; */
+    /* margin: 0 auto; */
+}
+
+/* Custom styles for minefield table cells if needed, though Tailwind classes are preferred */
+.minefield td {
+    /* Example of adding some specific styles if Tailwind doesn't cover all nuances */
+    cursor: pointer; /* Indicates cells are interactive */
+}
+
+/* Animation for the logo */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}
+
+.logo {
+    animation: pulse 2s infinite ease-in-out;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지뢰찾기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-gray-900 flex items-center justify-center min-h-screen">
+    <div class="game bg-gray-800 p-8 rounded-lg shadow-2xl flex flex-col items-center space-y-6">
+        <div class="logo text-white text-5xl font-extrabold mb-4 animate-pulse">지뢰 찾기</div>
+        <div class="diff text-gray-300 text-2xl">난이도를 선택해 주세요</div>
+        <div class="btncontainer flex space-x-4">
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">하</button>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">중</button>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">상</button>
+            <button class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">커스텀</button>
+        </div>
+        <table class="minefield bg-gray-700 border-2 border-gray-600 rounded-md overflow-hidden">
+        <!-- minefield sample
+            <tr>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+            </tr>
+            <tr>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+            </tr>
+            <tr>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+                <td class="w-10 h-10 border border-gray-600 text-white text-center text-xl"></td>
+            </tr>
+        -->
+        </table>
+    </div>
+</body>
+</html>
